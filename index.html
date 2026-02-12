@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Listing UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Job Listings</h1>
+    <p>Find frontend-friendly opportunities</p>
+  </header>
+
+  <main class="container">
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search jobs..." />
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Internship">Internship</option>
+      </select>
+    </div>
+
+    <!-- JOB LIST -->
+    <div id="jobList" class="job-list"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

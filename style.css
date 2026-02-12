@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters input,
+.filters select {
+  padding: 0.6rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* JOB LIST */
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.job-card h3 {
+  margin-bottom: 0.3rem;
+}
+
+.job-card .company {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  background: #ec4899;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.job-card p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.job-card a {
+  text-decoration: none;
+  color: #ec4899;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+}
